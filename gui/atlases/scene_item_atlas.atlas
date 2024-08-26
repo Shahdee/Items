@@ -88,4 +88,7 @@ images {
 images {
   image: "/assets/images/resources/res_gear.png"
 }
+images {
+  image: "/assets/images/buttons/button_locked.png"
+}
 extrude_borders: 2

@@ -11,5 +11,41 @@ nodes {
   alpha: 0.74
   size_mode: SIZE_MODE_AUTO
 }
+nodes {
+  position {
+    x: -361.0
+    y: -663.0
+  }
+  type: TYPE_BOX
+  texture: "tmp/Group 16521"
+  id: "box"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 13.0
+    y: -663.0
+  }
+  type: TYPE_BOX
+  texture: "tmp/Group 16528"
+  id: "box1"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 391.0
+    y: -663.0
+  }
+  type: TYPE_BOX
+  texture: "tmp/Group 16529"
+  id: "box2"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

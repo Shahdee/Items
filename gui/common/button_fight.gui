@@ -1,0 +1,101 @@
+script: ""
+fonts {
+  name: "font_bold"
+  font: "/gui/fonts/font_bold.font"
+}
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_green"
+  id: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -31.0
+    y: 4.0
+  }
+  scale {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.153
+    y: 0.408
+    z: 0.235
+  }
+  type: TYPE_TEXT
+  text: "\320\221\320\276\320\271"
+  font: "font_bold"
+  id: "text"
+  parent: "root"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 9.0
+    y: 3.0
+  }
+  size {
+    x: 100.0
+    y: 50.0
+  }
+  type: TYPE_BOX
+  id: "group_energy"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  position {
+    x: 32.0
+  }
+  size {
+    x: 23.0
+    y: 31.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/res_energy"
+  id: "icon_energy"
+  parent: "group_energy"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 17.0
+    y: 3.0
+  }
+  scale {
+    x: 0.8
+    y: 0.8
+    z: 0.8
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.153
+    y: 0.408
+    z: 0.235
+  }
+  type: TYPE_TEXT
+  text: "7"
+  font: "font_bold"
+  id: "text_energy"
+  pivot: PIVOT_E
+  parent: "group_energy"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

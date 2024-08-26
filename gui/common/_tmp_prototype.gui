@@ -11,5 +11,23 @@ nodes {
   parent: "template"
   template_node_child: true
 }
+nodes {
+  type: TYPE_BOX
+  id: "template/box"
+  parent: "template/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/box1"
+  parent: "template/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/box2"
+  parent: "template/root"
+  template_node_child: true
+}
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

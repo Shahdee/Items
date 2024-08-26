@@ -1,0 +1,109 @@
+script: ""
+fonts {
+  name: "font_bold"
+  font: "/gui/fonts/font_bold.font"
+}
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  size {
+    x: 308.0
+    y: 64.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_gold"
+  id: "root"
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 4.0
+    z: 7.0
+    w: 11.0
+  }
+}
+nodes {
+  position {
+    x: -38.0
+    y: 7.0
+  }
+  scale {
+    x: 0.65
+    y: 0.65
+    z: 0.65
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.549
+    y: 0.267
+    z: 0.004
+  }
+  type: TYPE_TEXT
+  text: "\320\221\320\276\320\273\321\214\321\210\320\265 \320\277\320\276\320\277\321\213\321\202\320\276\320\272"
+  font: "font_bold"
+  id: "text_attempts"
+  parent: "root"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 101.0
+    y: 5.0
+  }
+  size {
+    x: 100.0
+    y: 50.0
+  }
+  type: TYPE_BOX
+  id: "group_diamonds"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  position {
+    x: 18.0
+  }
+  size {
+    x: 27.0
+    y: 27.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/res_diamond"
+  id: "icon_diamond"
+  parent: "group_diamonds"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -4.0
+  }
+  scale {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  color {
+    x: 0.549
+    y: 0.267
+    z: 0.004
+  }
+  type: TYPE_TEXT
+  text: "7"
+  font: "font_bold"
+  id: "text_count"
+  pivot: PIVOT_E
+  parent: "group_diamonds"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

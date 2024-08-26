@@ -103,6 +103,24 @@ nodes {
   template_node_child: true
 }
 nodes {
+  type: TYPE_BOX
+  id: "tmp_mockup/box"
+  parent: "tmp_mockup/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "tmp_mockup/box1"
+  parent: "tmp_mockup/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "tmp_mockup/box2"
+  parent: "tmp_mockup/root"
+  template_node_child: true
+}
+nodes {
   position {
     x: 162.0
     y: 322.0

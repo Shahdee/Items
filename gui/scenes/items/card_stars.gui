@@ -1,0 +1,122 @@
+script: ""
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  id: "root"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  id: "star_01"
+  parent: "root"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_star_inactive"
+  id: "star_inactive"
+  parent: "star_01"
+  inherit_alpha: true
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_star_active"
+  id: "star_active"
+  parent: "star_01"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 29.0
+  }
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  id: "star_02"
+  parent: "root"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_star_inactive"
+  id: "star_inactive1"
+  parent: "star_02"
+  inherit_alpha: true
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_star_active"
+  id: "star_active1"
+  parent: "star_02"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 58.0
+  }
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  id: "star_03"
+  parent: "root"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_star_inactive"
+  id: "star_inactive2"
+  parent: "star_03"
+  inherit_alpha: true
+}
+nodes {
+  size {
+    x: 24.0
+    y: 23.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_star_active"
+  id: "star_active2"
+  parent: "star_03"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
