@@ -16,40 +16,6 @@ textures {
   texture: "/gui/atlases/background_cards.atlas"
 }
 nodes {
-  type: TYPE_TEMPLATE
-  id: "template"
-  inherit_alpha: true
-  template: "/gui/tmp/tmp_mockup.gui"
-}
-nodes {
-  type: TYPE_BOX
-  id: "template/root"
-  parent: "template"
-  template_node_child: true
-}
-nodes {
-  type: TYPE_BOX
-  id: "template/box"
-  parent: "template/root"
-  template_node_child: true
-}
-nodes {
-  type: TYPE_BOX
-  id: "template/box1"
-  parent: "template/root"
-  template_node_child: true
-}
-nodes {
-  type: TYPE_BOX
-  id: "template/box2"
-  parent: "template/root"
-  template_node_child: true
-}
-nodes {
-  position {
-    x: 391.0
-    y: -663.0
-  }
   size {
     x: 336.0
     y: 488.0
@@ -115,7 +81,6 @@ nodes {
   parent: "root"
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
-  enabled: false
 }
 nodes {
   position {
@@ -660,44 +625,35 @@ nodes {
     y: 30.0
   }
   size {
-    x: 300.0
-    y: 200.0
+    x: 315.0
+    y: 210.0
   }
   type: TYPE_BOX
   id: "grid_rewards_view"
   parent: "root"
   inherit_alpha: true
+  visible: false
 }
 nodes {
   position {
-    x: -150.0
-    y: 100.0
+    x: -157.5
+    y: 105.0
   }
   size {
-    x: 300.0
-    y: 200.0
+    x: 315.0
+    y: 210.0
   }
   type: TYPE_BOX
   id: "grid_rewards"
   pivot: PIVOT_NW
   parent: "grid_rewards_view"
   inherit_alpha: true
+  visible: false
 }
 nodes {
   size {
-    x: 200.0
-    y: 100.0
-  }
-  type: TYPE_BOX
-  id: "box"
-  parent: "grid_rewards"
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  size {
-    x: 100.0
-    y: 100.0
+    x: 105.0
+    y: 105.0
   }
   type: TYPE_BOX
   id: "prefab_item"
@@ -757,8 +713,8 @@ nodes {
 }
 nodes {
   size {
-    x: 100.0
-    y: 100.0
+    x: 105.0
+    y: 105.0
   }
   type: TYPE_BOX
   id: "prefab_resource"

@@ -204,46 +204,6 @@ nodes {
 }
 nodes {
   position {
-    x: 97.0
-  }
-  type: TYPE_TEMPLATE
-  id: "template_icon_resource"
-  parent: "root"
-  inherit_alpha: true
-  template: "/gui/scenes/items/icon_resource.gui"
-}
-nodes {
-  type: TYPE_BOX
-  id: "template_icon_resource/root"
-  parent: "template_icon_resource"
-  template_node_child: true
-}
-nodes {
-  type: TYPE_BOX
-  id: "template_icon_resource/icon_bg"
-  parent: "template_icon_resource/root"
-  template_node_child: true
-}
-nodes {
-  type: TYPE_BOX
-  id: "template_icon_resource/icon_resource"
-  parent: "template_icon_resource/root"
-  template_node_child: true
-}
-nodes {
-  type: TYPE_BOX
-  id: "template_icon_resource/icon_frame"
-  parent: "template_icon_resource/root"
-  template_node_child: true
-}
-nodes {
-  type: TYPE_TEXT
-  id: "template_icon_resource/text_amount"
-  parent: "template_icon_resource/root"
-  template_node_child: true
-}
-nodes {
-  position {
     x: -583.0
     y: 222.0
   }
@@ -376,6 +336,812 @@ nodes {
   pivot: PIVOT_W
   parent: "panel_item"
   inherit_alpha: true
+}
+nodes {
+  position {
+    x: 1215.0
+  }
+  size {
+    x: 352.0
+    y: 488.0
+  }
+  type: TYPE_BOX
+  id: "prefab_card_workshop"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_workshop"
+  parent: "prefab_card_workshop"
+  inherit_alpha: true
+  template: "/gui/scenes/items/card_workshop.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/root"
+  parent: "template_card_workshop"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/icon_workshop"
+  parent: "template_card_workshop/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/text_header"
+  parent: "template_card_workshop/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/text_cta"
+  parent: "template_card_workshop/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/panel_items"
+  parent: "template_card_workshop/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_workshop/template_icon_resource"
+  parent: "template_card_workshop/panel_items"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_resource/root"
+  parent: "template_card_workshop/template_icon_resource"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_resource/icon_bg"
+  parent: "template_card_workshop/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_resource/icon_resource"
+  parent: "template_card_workshop/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_resource/icon_frame"
+  parent: "template_card_workshop/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/template_icon_resource/text_amount"
+  parent: "template_card_workshop/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_workshop/template_icon_item"
+  parent: "template_card_workshop/panel_items"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_item/root"
+  parent: "template_card_workshop/template_icon_item"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_item/icon_bg"
+  parent: "template_card_workshop/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_item/icon_item"
+  parent: "template_card_workshop/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_item/icon_frame"
+  parent: "template_card_workshop/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_icon_item/icon_corner"
+  parent: "template_card_workshop/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/template_icon_item/text_amount"
+  parent: "template_card_workshop/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/template_icon_item/text_rank"
+  parent: "template_card_workshop/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/icon_arrow"
+  parent: "template_card_workshop/panel_items"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/panel_buttons"
+  parent: "template_card_workshop/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_workshop/template_slider_max"
+  parent: "template_card_workshop/panel_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_slider_max/root"
+  parent: "template_card_workshop/template_slider_max"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_slider_max/button_minus"
+  parent: "template_card_workshop/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_slider_max/icon_minus"
+  parent: "template_card_workshop/template_slider_max/button_minus"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/template_slider_max/text_count"
+  parent: "template_card_workshop/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_slider_max/button_plus"
+  parent: "template_card_workshop/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_slider_max/icon_plus"
+  parent: "template_card_workshop/template_slider_max/button_plus"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_slider_max/button_max"
+  parent: "template_card_workshop/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/template_slider_max/text_max"
+  parent: "template_card_workshop/template_slider_max/button_max"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_workshop/template_button_create"
+  parent: "template_card_workshop/panel_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/template_button_create/root"
+  parent: "template_card_workshop/template_button_create"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/template_button_create/text"
+  parent: "template_card_workshop/template_button_create/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/panel_locked"
+  parent: "template_card_workshop/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_workshop/icon_lock"
+  parent: "template_card_workshop/panel_locked"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_workshop/text_locked"
+  parent: "template_card_workshop/panel_locked"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 1649.0
+  }
+  size {
+    x: 352.0
+    y: 488.0
+  }
+  type: TYPE_BOX
+  id: "prefab_card_campaign"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign"
+  parent: "prefab_card_campaign"
+  inherit_alpha: true
+  template: "/gui/scenes/items/card_campaign.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/root"
+  parent: "template_card_campaign"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/group_normal"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/icon_normal"
+  parent: "template_card_campaign/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/text_campaign_normal_name"
+  parent: "template_card_campaign/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/group_hard"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/icon_hard"
+  parent: "template_card_campaign/group_hard"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/text_campaign_hard_name"
+  parent: "template_card_campaign/group_hard"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/button_back"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template_card_stars"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/root"
+  parent: "template_card_campaign/template_card_stars"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_01"
+  parent: "template_card_campaign/template_card_stars/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_inactive"
+  parent: "template_card_campaign/template_card_stars/star_01"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_active"
+  parent: "template_card_campaign/template_card_stars/star_01"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_02"
+  parent: "template_card_campaign/template_card_stars/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_inactive_02"
+  parent: "template_card_campaign/template_card_stars/star_02"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_active_02"
+  parent: "template_card_campaign/template_card_stars/star_02"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_03"
+  parent: "template_card_campaign/template_card_stars/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_inactive_03"
+  parent: "template_card_campaign/template_card_stars/star_03"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_card_stars/star_active_03"
+  parent: "template_card_campaign/template_card_stars/star_03"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/text_rewards"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template_slider_max"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_slider_max/root"
+  parent: "template_card_campaign/template_slider_max"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_slider_max/button_minus"
+  parent: "template_card_campaign/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_slider_max/icon_minus"
+  parent: "template_card_campaign/template_slider_max/button_minus"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_slider_max/text_count"
+  parent: "template_card_campaign/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_slider_max/button_plus"
+  parent: "template_card_campaign/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_slider_max/icon_plus"
+  parent: "template_card_campaign/template_slider_max/button_plus"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_slider_max/button_max"
+  parent: "template_card_campaign/template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_slider_max/text_max"
+  parent: "template_card_campaign/template_slider_max/button_max"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/panel_buttons"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/text_attempts"
+  parent: "template_card_campaign/panel_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/group_fight_buttons"
+  parent: "template_card_campaign/panel_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/group_fight_select"
+  parent: "template_card_campaign/group_fight_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template_button_fight"
+  parent: "template_card_campaign/group_fight_select"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_fight/root"
+  parent: "template_card_campaign/template_button_fight"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_fight/text"
+  parent: "template_card_campaign/template_button_fight/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_fight/group_energy"
+  parent: "template_card_campaign/template_button_fight/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_fight/icon_energy"
+  parent: "template_card_campaign/template_button_fight/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_fight/text_energy"
+  parent: "template_card_campaign/template_button_fight/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/background_raid_warning"
+  parent: "template_card_campaign/group_fight_select"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/text_raid_warning"
+  parent: "template_card_campaign/background_raid_warning"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template_button_raid"
+  parent: "template_card_campaign/group_fight_select"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid/root"
+  parent: "template_card_campaign/template_button_raid"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid/group_normal"
+  parent: "template_card_campaign/template_button_raid/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_raid/text_raid_normal"
+  parent: "template_card_campaign/template_button_raid/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid/group_energy"
+  parent: "template_card_campaign/template_button_raid/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid/icon_energy"
+  parent: "template_card_campaign/template_button_raid/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_raid/text_energy"
+  parent: "template_card_campaign/template_button_raid/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid/group_locked"
+  parent: "template_card_campaign/template_button_raid/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_raid/text_raid_locked"
+  parent: "template_card_campaign/template_button_raid/group_locked"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid/icon_locked"
+  parent: "template_card_campaign/template_button_raid/group_locked"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template_button_raid_centered"
+  parent: "template_card_campaign/group_fight_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid_centered/root"
+  parent: "template_card_campaign/template_button_raid_centered"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid_centered/group_normal"
+  parent: "template_card_campaign/template_button_raid_centered/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_raid_centered/text_raid_normal"
+  parent: "template_card_campaign/template_button_raid_centered/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid_centered/group_energy"
+  parent: "template_card_campaign/template_button_raid_centered/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid_centered/icon_energy"
+  parent: "template_card_campaign/template_button_raid_centered/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_raid_centered/text_energy"
+  parent: "template_card_campaign/template_button_raid_centered/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid_centered/group_locked"
+  parent: "template_card_campaign/template_button_raid_centered/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_button_raid_centered/text_raid_locked"
+  parent: "template_card_campaign/template_button_raid_centered/group_locked"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_button_raid_centered/icon_locked"
+  parent: "template_card_campaign/template_button_raid_centered/group_locked"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/text_campiagn_locked"
+  parent: "template_card_campaign/panel_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template1"
+  parent: "template_card_campaign/panel_buttons"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template1/root"
+  parent: "template_card_campaign/template1"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template1/text_attempts"
+  parent: "template_card_campaign/template1/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template1/group_diamonds"
+  parent: "template_card_campaign/template1/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template1/icon_diamond"
+  parent: "template_card_campaign/template1/group_diamonds"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template1/text_count"
+  parent: "template_card_campaign/template1/group_diamonds"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/grid_rewards_view"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/grid_rewards"
+  parent: "template_card_campaign/grid_rewards_view"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/prefab_item"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template_icon_item"
+  parent: "template_card_campaign/prefab_item"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_item/root"
+  parent: "template_card_campaign/template_icon_item"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_item/icon_bg"
+  parent: "template_card_campaign/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_item/icon_item"
+  parent: "template_card_campaign/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_item/icon_frame"
+  parent: "template_card_campaign/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_item/icon_corner"
+  parent: "template_card_campaign/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_icon_item/text_amount"
+  parent: "template_card_campaign/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_icon_item/text_rank"
+  parent: "template_card_campaign/template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/prefab_resource"
+  parent: "template_card_campaign/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_card_campaign/template_icon_resource"
+  parent: "template_card_campaign/prefab_resource"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_resource/root"
+  parent: "template_card_campaign/template_icon_resource"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_resource/icon_bg"
+  parent: "template_card_campaign/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_resource/icon_resource"
+  parent: "template_card_campaign/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_campaign/template_icon_resource/icon_frame"
+  parent: "template_card_campaign/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_card_campaign/template_icon_resource/text_amount"
+  parent: "template_card_campaign/template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: -623.0
+    y: -100.0
+  }
+  size {
+    x: 1260.0
+    y: 488.0
+  }
+  type: TYPE_BOX
+  id: "scroll_view"
+  pivot: PIVOT_W
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "scroll_content"
+  pivot: PIVOT_W
+  parent: "scroll_view"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
