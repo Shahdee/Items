@@ -7,4 +7,7 @@ images {
 images {
   image: "/assets/images/bg/bg_workshop.png"
 }
+images {
+  image: "/assets/images/bg/bg_locked.png"
+}
 extrude_borders: 2

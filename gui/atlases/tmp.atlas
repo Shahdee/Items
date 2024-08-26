@@ -1,4 +1,13 @@
 images {
   image: "/assets/images/tmp_mockup.png"
 }
+images {
+  image: "/assets/images/Group 16521.png"
+}
+images {
+  image: "/assets/images/Group 16528.png"
+}
+images {
+  image: "/assets/images/Group 16529.png"
+}
 extrude_borders: 2

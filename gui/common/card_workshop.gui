@@ -24,18 +24,6 @@ nodes {
 }
 nodes {
   position {
-    x: 1.0
-    y: -168.0
-  }
-  type: TYPE_BOX
-  texture: "scene_item_atlas/bg_overlay"
-  id: "background"
-  parent: "root"
-  inherit_alpha: true
-  size_mode: SIZE_MODE_AUTO
-}
-nodes {
-  position {
     x: -135.0
     y: 213.0
   }
@@ -215,12 +203,23 @@ nodes {
 }
 nodes {
   position {
+    y: -168.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/bg_overlay"
+  id: "panel_buttons"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
     x: -52.0
-    y: -130.0
+    y: 36.0
   }
   type: TYPE_TEMPLATE
   id: "template_slider_max"
-  parent: "root"
+  parent: "panel_buttons"
   inherit_alpha: true
   template: "/gui/common/slider_max.gui"
 }
@@ -275,11 +274,11 @@ nodes {
 nodes {
   position {
     x: -9.0
-    y: -198.0
+    y: -32.0
   }
   type: TYPE_TEMPLATE
   id: "template_button_create"
-  parent: "root"
+  parent: "panel_buttons"
   inherit_alpha: true
   template: "/gui/common/button_create.gui"
 }
@@ -294,6 +293,56 @@ nodes {
   id: "template_button_create/text"
   parent: "template_button_create/root"
   template_node_child: true
+}
+nodes {
+  size {
+    x: 336.0
+    y: 488.0
+  }
+  color {
+    x: 0.067
+    y: 0.141
+    z: 0.22
+  }
+  type: TYPE_BOX
+  texture: "background_cards/bg_locked"
+  id: "panel_locked"
+  parent: "root"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -5.0
+    y: 47.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_lock"
+  id: "icon_lock"
+  parent: "panel_locked"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: -35.0
+  }
+  scale {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "\320\247\321\202\320\276\320\261\321\213 \321\201\320\276\320\267\320\264\320\260\320\262\320\260\321\202\321\214 \320\264\320\265\321\202\320\260\320\273\320\270 N\n"
+  "\321\200\320\260\320\275\320\263\320\260, \320\277\320\276\320\262\321\213\321\201\321\214\321\202\320\265 \321\203\321\200\320\276\320\262\320\265\320\275\321\214 \n"
+  "\320\274\320\260\321\201\321\202\320\265\321\200\321\201\320\272\320\276\320\271 \320\264\320\276 15"
+  font: "font_default"
+  id: "text_locked"
+  parent: "panel_locked"
+  inherit_alpha: true
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
