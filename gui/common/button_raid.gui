@@ -50,6 +50,8 @@ nodes {
   id: "text_raid_normal"
   parent: "group_normal"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   position {
@@ -107,6 +109,8 @@ nodes {
   pivot: PIVOT_E
   parent: "group_energy"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   type: TYPE_BOX
@@ -115,6 +119,7 @@ nodes {
   parent: "root"
   inherit_alpha: true
   size_mode: SIZE_MODE_AUTO
+  enabled: false
 }
 nodes {
   position {
@@ -141,6 +146,8 @@ nodes {
   id: "text_raid_locked"
   parent: "group_locked"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   position {

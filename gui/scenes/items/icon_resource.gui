@@ -64,6 +64,7 @@ nodes {
   pivot: PIVOT_E
   parent: "root"
   inherit_alpha: true
+  shadow_alpha: 0.0
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

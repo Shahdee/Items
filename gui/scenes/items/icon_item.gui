@@ -56,27 +56,6 @@ nodes {
 nodes {
   position {
     x: 37.0
-    y: -24.0
-  }
-  scale {
-    x: 0.75
-    y: 0.75
-  }
-  size {
-    x: 100.0
-    y: 100.0
-  }
-  type: TYPE_TEXT
-  text: "2/4"
-  font: "font_bold"
-  id: "text_amount"
-  pivot: PIVOT_E
-  parent: "root"
-  inherit_alpha: true
-}
-nodes {
-  position {
-    x: 37.0
     y: 32.0
   }
   scale {
@@ -94,6 +73,30 @@ nodes {
   pivot: PIVOT_E
   parent: "root"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
+}
+nodes {
+  position {
+    x: 37.0
+    y: -24.0
+  }
+  scale {
+    x: 0.75
+    y: 0.75
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "2/4"
+  font: "font_bold"
+  id: "text_amount"
+  pivot: PIVOT_E
+  parent: "root"
+  inherit_alpha: true
+  shadow_alpha: 0.0
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

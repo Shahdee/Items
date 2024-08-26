@@ -256,13 +256,13 @@ nodes {
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_icon_item/text_amount"
+  id: "template_icon_item/text_rank"
   parent: "template_icon_item/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_icon_item/text_rank"
+  id: "template_icon_item/text_amount"
   parent: "template_icon_item/root"
   template_node_child: true
 }
@@ -287,6 +287,8 @@ nodes {
   pivot: PIVOT_W
   parent: "panel_item"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.13
 }
 nodes {
   position {
@@ -309,6 +311,8 @@ nodes {
   pivot: PIVOT_W
   parent: "panel_item"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.13
 }
 nodes {
   position {
@@ -330,16 +334,18 @@ nodes {
     z: 0.757
   }
   type: TYPE_TEXT
-  text: "\320\241\320\277\320\276\321\201\320\276\320\261\320\275\320\260 \321\201\320\272\321\200\320\265\320\277\320\270\321\202\321\214 \320\264\320\260\320\266\320\265..."
+  text: "\320\241\320\277\320\276\321\201\320\276\320\261\320\275\320\260 \321\201\320\272\321\200\320\265\320\277\320\270\321\202\321\214 \320\264\320\260\320\266\320\265 \320\264\321\203\321\205 \321\206\320\265\320\273\320\276\320\263\320\276 \320\277\320\276\321\201\320\265\320\273\320\265\320\275\320\270\321\217."
   font: "font_italic"
   id: "text_item_name_narrative"
   pivot: PIVOT_W
   parent: "panel_item"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.13
 }
 nodes {
   position {
-    x: 1215.0
+    x: 1191.0
   }
   size {
     x: 352.0
@@ -463,13 +469,13 @@ nodes {
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_card_workshop/template_icon_item/text_amount"
+  id: "template_card_workshop/template_icon_item/text_rank"
   parent: "template_card_workshop/template_icon_item/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_card_workshop/template_icon_item/text_rank"
+  id: "template_card_workshop/template_icon_item/text_amount"
   parent: "template_card_workshop/template_icon_item/root"
   template_node_child: true
 }
@@ -577,7 +583,7 @@ nodes {
 }
 nodes {
   position {
-    x: 1649.0
+    x: 1191.0
   }
   size {
     x: 352.0
@@ -971,38 +977,38 @@ nodes {
 }
 nodes {
   type: TYPE_TEMPLATE
-  id: "template_card_campaign/template1"
+  id: "template_card_campaign/template_buton_attempts"
   parent: "template_card_campaign/panel_buttons"
   template_node_child: true
 }
 nodes {
   type: TYPE_BOX
-  id: "template_card_campaign/template1/root"
-  parent: "template_card_campaign/template1"
+  id: "template_card_campaign/template_buton_attempts/root"
+  parent: "template_card_campaign/template_buton_attempts"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_card_campaign/template1/text_attempts"
-  parent: "template_card_campaign/template1/root"
+  id: "template_card_campaign/template_buton_attempts/text_attempts"
+  parent: "template_card_campaign/template_buton_attempts/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_BOX
-  id: "template_card_campaign/template1/group_diamonds"
-  parent: "template_card_campaign/template1/root"
+  id: "template_card_campaign/template_buton_attempts/group_diamonds"
+  parent: "template_card_campaign/template_buton_attempts/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_BOX
-  id: "template_card_campaign/template1/icon_diamond"
-  parent: "template_card_campaign/template1/group_diamonds"
+  id: "template_card_campaign/template_buton_attempts/icon_diamond"
+  parent: "template_card_campaign/template_buton_attempts/group_diamonds"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_card_campaign/template1/text_count"
-  parent: "template_card_campaign/template1/group_diamonds"
+  id: "template_card_campaign/template_buton_attempts/text_count"
+  parent: "template_card_campaign/template_buton_attempts/group_diamonds"
   template_node_child: true
 }
 nodes {
@@ -1061,13 +1067,13 @@ nodes {
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_card_campaign/template_icon_item/text_amount"
+  id: "template_card_campaign/template_icon_item/text_rank"
   parent: "template_card_campaign/template_icon_item/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_card_campaign/template_icon_item/text_rank"
+  id: "template_card_campaign/template_icon_item/text_amount"
   parent: "template_card_campaign/template_icon_item/root"
   template_node_child: true
 }

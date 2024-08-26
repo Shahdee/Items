@@ -48,6 +48,8 @@ nodes {
   id: "text_attempts"
   parent: "root"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   position {
@@ -104,6 +106,8 @@ nodes {
   pivot: PIVOT_E
   parent: "group_diamonds"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT

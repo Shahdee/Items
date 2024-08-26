@@ -73,6 +73,8 @@ nodes {
   pivot: PIVOT_W
   parent: "group_normal"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.13
 }
 nodes {
   type: TYPE_BOX
@@ -120,6 +122,8 @@ nodes {
   pivot: PIVOT_W
   parent: "group_hard"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.13
 }
 nodes {
   position {
@@ -167,6 +171,7 @@ nodes {
   type: TYPE_BOX
   id: "template_card_stars/star_active"
   parent: "template_card_stars/star_01"
+  overridden_fields: 45
   template_node_child: true
 }
 nodes {
@@ -224,6 +229,8 @@ nodes {
   id: "text_rewards"
   parent: "root"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   position {
@@ -320,6 +327,8 @@ nodes {
   id: "text_attempts"
   parent: "panel_buttons"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   size {
@@ -415,6 +424,8 @@ nodes {
   id: "text_raid_warning"
   parent: "background_raid_warning"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   position {
@@ -577,6 +588,8 @@ nodes {
   id: "text_campiagn_locked"
   parent: "panel_buttons"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
   enabled: false
 }
 nodes {
@@ -584,7 +597,7 @@ nodes {
     y: -31.0
   }
   type: TYPE_TEMPLATE
-  id: "template1"
+  id: "template_buton_attempts"
   parent: "panel_buttons"
   inherit_alpha: true
   template: "/gui/common/button_attempts.gui"
@@ -592,32 +605,32 @@ nodes {
 }
 nodes {
   type: TYPE_BOX
-  id: "template1/root"
-  parent: "template1"
+  id: "template_buton_attempts/root"
+  parent: "template_buton_attempts"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template1/text_attempts"
-  parent: "template1/root"
+  id: "template_buton_attempts/text_attempts"
+  parent: "template_buton_attempts/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_BOX
-  id: "template1/group_diamonds"
-  parent: "template1/root"
+  id: "template_buton_attempts/group_diamonds"
+  parent: "template_buton_attempts/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_BOX
-  id: "template1/icon_diamond"
-  parent: "template1/group_diamonds"
+  id: "template_buton_attempts/icon_diamond"
+  parent: "template_buton_attempts/group_diamonds"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template1/text_count"
-  parent: "template1/group_diamonds"
+  id: "template_buton_attempts/text_count"
+  parent: "template_buton_attempts/group_diamonds"
   template_node_child: true
 }
 nodes {
@@ -701,13 +714,13 @@ nodes {
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_icon_item/text_amount"
+  id: "template_icon_item/text_rank"
   parent: "template_icon_item/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_icon_item/text_rank"
+  id: "template_icon_item/text_amount"
   parent: "template_icon_item/root"
   template_node_child: true
 }

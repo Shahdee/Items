@@ -60,6 +60,8 @@ nodes {
   pivot: PIVOT_W
   parent: "root"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.13
 }
 nodes {
   position {
@@ -81,6 +83,8 @@ nodes {
   id: "text_cta"
   parent: "root"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 nodes {
   position {
@@ -179,13 +183,13 @@ nodes {
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_icon_item/text_amount"
+  id: "template_icon_item/text_rank"
   parent: "template_icon_item/root"
   template_node_child: true
 }
 nodes {
   type: TYPE_TEXT
-  id: "template_icon_item/text_rank"
+  id: "template_icon_item/text_amount"
   parent: "template_icon_item/root"
   template_node_child: true
 }
@@ -309,6 +313,7 @@ nodes {
   id: "panel_locked"
   parent: "root"
   inherit_alpha: true
+  enabled: false
 }
 nodes {
   position {
@@ -343,6 +348,8 @@ nodes {
   id: "text_locked"
   parent: "panel_locked"
   inherit_alpha: true
+  outline_alpha: 0.0
+  shadow_alpha: 0.0
 }
 material: "/builtins/materials/gui.material"
 adjust_reference: ADJUST_REFERENCE_PARENT
