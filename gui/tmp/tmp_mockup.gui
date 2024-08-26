@@ -13,7 +13,7 @@ nodes {
 }
 nodes {
   position {
-    x: -361.0
+    x: 7.0
     y: -663.0
   }
   type: TYPE_BOX
@@ -25,7 +25,7 @@ nodes {
 }
 nodes {
   position {
-    x: 13.0
+    x: -455.0
     y: -663.0
   }
   type: TYPE_BOX

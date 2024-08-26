@@ -14,6 +14,11 @@ nodes {
   visible: false
 }
 nodes {
+  scale {
+    x: 1.2
+    y: 1.2
+    z: 1.2
+  }
   size {
     x: 24.0
     y: 23.0
@@ -50,6 +55,11 @@ nodes {
   position {
     x: 29.0
   }
+  scale {
+    x: 1.2
+    y: 1.2
+    z: 1.2
+  }
   size {
     x: 24.0
     y: 23.0
@@ -67,7 +77,7 @@ nodes {
   }
   type: TYPE_BOX
   texture: "scene_item_atlas/icon_star_inactive"
-  id: "star_inactive1"
+  id: "star_inactive_02"
   parent: "star_02"
   inherit_alpha: true
 }
@@ -78,13 +88,18 @@ nodes {
   }
   type: TYPE_BOX
   texture: "scene_item_atlas/icon_star_active"
-  id: "star_active1"
+  id: "star_active_02"
   parent: "star_02"
   inherit_alpha: true
 }
 nodes {
   position {
     x: 58.0
+  }
+  scale {
+    x: 1.2
+    y: 1.2
+    z: 1.2
   }
   size {
     x: 24.0
@@ -103,7 +118,7 @@ nodes {
   }
   type: TYPE_BOX
   texture: "scene_item_atlas/icon_star_inactive"
-  id: "star_inactive2"
+  id: "star_inactive_03"
   parent: "star_03"
   inherit_alpha: true
 }
@@ -114,7 +129,7 @@ nodes {
   }
   type: TYPE_BOX
   texture: "scene_item_atlas/icon_star_active"
-  id: "star_active2"
+  id: "star_active_03"
   parent: "star_03"
   inherit_alpha: true
 }

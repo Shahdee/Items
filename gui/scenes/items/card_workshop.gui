@@ -105,7 +105,7 @@ nodes {
   id: "template_icon_resource"
   parent: "panel_items"
   inherit_alpha: true
-  template: "/gui/common/icon_resource.gui"
+  template: "/gui/scenes/items/icon_resource.gui"
 }
 nodes {
   type: TYPE_BOX
@@ -145,7 +145,7 @@ nodes {
   id: "template_icon_item"
   parent: "panel_items"
   inherit_alpha: true
-  template: "/gui/common/icon_item.gui"
+  template: "/gui/scenes/items/icon_item.gui"
 }
 nodes {
   type: TYPE_BOX
@@ -221,7 +221,7 @@ nodes {
   id: "template_slider_max"
   parent: "panel_buttons"
   inherit_alpha: true
-  template: "/gui/common/slider_max.gui"
+  template: "/gui/scenes/items/slider_max.gui"
 }
 nodes {
   type: TYPE_BOX

@@ -1,0 +1,808 @@
+script: ""
+fonts {
+  name: "font_bold"
+  font: "/gui/fonts/font_bold.font"
+}
+fonts {
+  name: "font_default"
+  font: "/gui/fonts/font_default.font"
+}
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+textures {
+  name: "background_cards"
+  texture: "/gui/atlases/background_cards.atlas"
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template"
+  inherit_alpha: true
+  template: "/gui/tmp/tmp_mockup.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/root"
+  parent: "template"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/box"
+  parent: "template/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/box1"
+  parent: "template/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/box2"
+  parent: "template/root"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 391.0
+    y: -663.0
+  }
+  size {
+    x: 336.0
+    y: 488.0
+  }
+  type: TYPE_BOX
+  id: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  type: TYPE_BOX
+  texture: "background_cards/bg_normal"
+  id: "group_normal"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  enabled: false
+}
+nodes {
+  position {
+    x: -129.0
+    y: 203.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_normal"
+  id: "icon_normal"
+  parent: "group_normal"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -94.0
+    y: 211.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+    z: 0.6
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.847
+    y: 0.286
+    z: 0.867
+  }
+  type: TYPE_TEXT
+  text: "\320\232\320\260\320\274\320\277\320\260\320\275\320\270\321\217 1-28"
+  font: "font_bold"
+  id: "text_campaign_normal_name"
+  pivot: PIVOT_W
+  parent: "group_normal"
+  inherit_alpha: true
+}
+nodes {
+  type: TYPE_BOX
+  texture: "background_cards/bg_hard"
+  id: "group_hard"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  enabled: false
+}
+nodes {
+  position {
+    x: -138.0
+    y: 209.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_hard"
+  id: "icon_hard"
+  parent: "group_hard"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -109.0
+    y: 213.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+    z: 0.6
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.996
+    y: 0.8
+    z: 0.224
+  }
+  type: TYPE_TEXT
+  text: "\320\232\320\260\320\274\320\277\320\260\320\275\320\270\321\217 1-28"
+  font: "font_bold"
+  id: "text_campaign_hard_name"
+  pivot: PIVOT_W
+  parent: "group_hard"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -144.0
+    y: 215.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_arrow"
+  id: "button_back"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  enabled: false
+}
+nodes {
+  position {
+    x: 91.0
+    y: 210.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_card_stars"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/scenes/items/card_stars.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/root"
+  parent: "template_card_stars"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_01"
+  parent: "template_card_stars/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_inactive"
+  parent: "template_card_stars/star_01"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_active"
+  parent: "template_card_stars/star_01"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_02"
+  parent: "template_card_stars/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_inactive_02"
+  parent: "template_card_stars/star_02"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_active_02"
+  parent: "template_card_stars/star_02"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_03"
+  parent: "template_card_stars/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_inactive_03"
+  parent: "template_card_stars/star_03"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_card_stars/star_active_03"
+  parent: "template_card_stars/star_03"
+  template_node_child: true
+}
+nodes {
+  position {
+    y: 166.0
+  }
+  scale {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "\320\222\320\276\320\267\320\274\320\276\320\266\320\275\321\213\320\265 \320\275\320\260\320\263\321\200\320\260\320\264\321\213"
+  font: "font_bold"
+  id: "text_rewards"
+  parent: "root"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -46.0
+    y: -16.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_slider_max"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/scenes/items/slider_max.gui"
+  enabled: false
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_slider_max/root"
+  parent: "template_slider_max"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_slider_max/button_minus"
+  parent: "template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_slider_max/icon_minus"
+  parent: "template_slider_max/button_minus"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_slider_max/text_count"
+  parent: "template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_slider_max/button_plus"
+  parent: "template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_slider_max/icon_plus"
+  parent: "template_slider_max/button_plus"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_slider_max/button_max"
+  parent: "template_slider_max/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_slider_max/text_max"
+  parent: "template_slider_max/button_max"
+  template_node_child: true
+}
+nodes {
+  position {
+    y: -168.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/bg_overlay"
+  id: "panel_buttons"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 29.0
+  }
+  scale {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.337
+    y: 0.537
+    z: 0.525
+  }
+  type: TYPE_TEXT
+  text: "\320\236\321\201\321\202\320\260\320\273\320\276\321\201\321\214 \320\277\320\276\320\277\321\213\321\202\320\276\320\272: 10"
+  font: "font_default"
+  id: "text_attempts"
+  parent: "panel_buttons"
+  inherit_alpha: true
+}
+nodes {
+  size {
+    x: 334.0
+    y: 151.0
+  }
+  type: TYPE_BOX
+  id: "group_fight_buttons"
+  parent: "panel_buttons"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  size {
+    x: 334.0
+    y: 151.0
+  }
+  type: TYPE_BOX
+  id: "group_fight_select"
+  parent: "group_fight_buttons"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  position {
+    x: -79.0
+    y: -33.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_button_fight"
+  parent: "group_fight_select"
+  inherit_alpha: true
+  template: "/gui/common/button_fight.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_fight/root"
+  parent: "template_button_fight"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_fight/text"
+  parent: "template_button_fight/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_fight/group_energy"
+  parent: "template_button_fight/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_fight/icon_energy"
+  parent: "template_button_fight/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_fight/text_energy"
+  parent: "template_button_fight/group_energy"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 81.0
+    y: 54.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/bg_warning"
+  id: "background_raid_warning"
+  parent: "group_fight_select"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  scale {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "\320\247\321\202\320\276\320\261\321\213 \321\200\320\260\320\267\320\261\320\273\320\276\320\272\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \n"
+  "\320\260\320\262\321\202\320\276\320\277\321\200\320\276\321\205\320\276\320\266\320\264\320\265\320\275\320\270\320\265 \321\203\321\200\320\276\320\262\320\275\321\217,\n"
+  "\320\277\321\200\320\276\320\271\320\264\320\270\321\202\320\265 \320\265\320\263\320\276 \320\275\320\260 3 \320\267\320\262\320\265\320\267\320\264\321\213"
+  font: "font_bold"
+  id: "text_raid_warning"
+  parent: "background_raid_warning"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 82.0
+    y: -33.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_button_raid"
+  parent: "group_fight_select"
+  inherit_alpha: true
+  template: "/gui/common/button_raid.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid/root"
+  parent: "template_button_raid"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid/group_normal"
+  parent: "template_button_raid/root"
+  overridden_fields: 45
+  template_node_child: true
+  enabled: false
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_raid/text_raid_normal"
+  parent: "template_button_raid/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid/group_energy"
+  parent: "template_button_raid/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid/icon_energy"
+  parent: "template_button_raid/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_raid/text_energy"
+  parent: "template_button_raid/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid/group_locked"
+  parent: "template_button_raid/root"
+  overridden_fields: 45
+  overridden_fields: 46
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_raid/text_raid_locked"
+  parent: "template_button_raid/group_locked"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid/icon_locked"
+  parent: "template_button_raid/group_locked"
+  template_node_child: true
+}
+nodes {
+  position {
+    y: -30.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_button_raid_centered"
+  parent: "group_fight_buttons"
+  inherit_alpha: true
+  template: "/gui/common/button_raid.gui"
+  enabled: false
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid_centered/root"
+  parent: "template_button_raid_centered"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid_centered/group_normal"
+  parent: "template_button_raid_centered/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_raid_centered/text_raid_normal"
+  parent: "template_button_raid_centered/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid_centered/group_energy"
+  parent: "template_button_raid_centered/group_normal"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid_centered/icon_energy"
+  parent: "template_button_raid_centered/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_raid_centered/text_energy"
+  parent: "template_button_raid_centered/group_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid_centered/group_locked"
+  parent: "template_button_raid_centered/root"
+  overridden_fields: 45
+  template_node_child: true
+  enabled: false
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_raid_centered/text_raid_locked"
+  parent: "template_button_raid_centered/group_locked"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_raid_centered/icon_locked"
+  parent: "template_button_raid_centered/group_locked"
+  template_node_child: true
+}
+nodes {
+  position {
+    y: 17.0
+  }
+  scale {
+    x: 0.5
+    y: 0.5
+    z: 0.5
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.337
+    y: 0.537
+    z: 0.525
+  }
+  type: TYPE_TEXT
+  text: "\320\237\321\200\320\276\320\271\320\264\320\270\321\202\320\265 \320\272\320\260\320\274\320\277\320\260\320\275\320\270\321\216 \320\264\320\276 \321\203\321\200\320\276\320\262\320\275\321\217 1-28, \n"
+  "\321\207\321\202\320\276\320\261\321\213 \320\277\320\276\320\273\321\203\321\207\320\270\321\202\321\214 \320\275\320\260\320\263\321\200\320\260\320\264\321\213 "
+  font: "font_default"
+  id: "text_campiagn_locked"
+  parent: "panel_buttons"
+  inherit_alpha: true
+  enabled: false
+}
+nodes {
+  position {
+    y: -31.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template1"
+  parent: "panel_buttons"
+  inherit_alpha: true
+  template: "/gui/common/button_attempts.gui"
+  enabled: false
+}
+nodes {
+  type: TYPE_BOX
+  id: "template1/root"
+  parent: "template1"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template1/text_attempts"
+  parent: "template1/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template1/group_diamonds"
+  parent: "template1/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template1/icon_diamond"
+  parent: "template1/group_diamonds"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template1/text_count"
+  parent: "template1/group_diamonds"
+  template_node_child: true
+}
+nodes {
+  position {
+    y: 30.0
+  }
+  size {
+    x: 300.0
+    y: 200.0
+  }
+  type: TYPE_BOX
+  id: "grid_rewards_view"
+  parent: "root"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: -150.0
+    y: 100.0
+  }
+  size {
+    x: 300.0
+    y: 200.0
+  }
+  type: TYPE_BOX
+  id: "grid_rewards"
+  pivot: PIVOT_NW
+  parent: "grid_rewards_view"
+  inherit_alpha: true
+}
+nodes {
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "box"
+  parent: "grid_rewards"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "prefab_item"
+  pivot: PIVOT_NW
+  parent: "root"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_icon_item"
+  parent: "prefab_item"
+  inherit_alpha: true
+  template: "/gui/scenes/items/icon_item.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_item/root"
+  parent: "template_icon_item"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_item/icon_bg"
+  parent: "template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_item/icon_item"
+  parent: "template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_item/icon_frame"
+  parent: "template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_item/icon_corner"
+  parent: "template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_icon_item/text_amount"
+  parent: "template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_icon_item/text_rank"
+  parent: "template_icon_item/root"
+  template_node_child: true
+}
+nodes {
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "prefab_resource"
+  pivot: PIVOT_NW
+  parent: "root"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_icon_resource"
+  parent: "prefab_resource"
+  inherit_alpha: true
+  template: "/gui/scenes/items/icon_resource.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_resource/root"
+  parent: "template_icon_resource"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_resource/icon_bg"
+  parent: "template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_resource/icon_resource"
+  parent: "template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_icon_resource/icon_frame"
+  parent: "template_icon_resource/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_icon_resource/text_amount"
+  parent: "template_icon_resource/root"
+  template_node_child: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

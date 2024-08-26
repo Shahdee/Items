@@ -13,4 +13,5 @@ input_method = HiddenInputField
 
 [project]
 title = Items
+dependencies#0 = https://github.com/Insality/druid/archive/master.zip
 
