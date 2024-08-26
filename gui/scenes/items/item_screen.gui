@@ -1,0 +1,177 @@
+script: ""
+textures {
+  name: "scene_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  position {
+    x: 640.0
+    y: 360.0
+  }
+  size {
+    x: 1280.0
+    y: 720.0
+  }
+  type: TYPE_BOX
+  id: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template_bg_scene"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/common/background_scene.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_bg_scene/root"
+  parent: "template_bg_scene"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: -397.0
+    y: 330.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_button_back"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/common/button_back.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_back/root"
+  parent: "template_button_back"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_button_back/button_back"
+  parent: "template_button_back/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_button_back/text_header"
+  parent: "template_button_back/root"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 582.0
+    y: 318.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/common/button_exit.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/root"
+  parent: "template"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEMPLATE
+  id: "tmp_mockup"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/tmp/tmp_mockup.gui"
+  enabled: false
+}
+nodes {
+  type: TYPE_BOX
+  id: "tmp_mockup/root"
+  parent: "tmp_mockup"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 162.0
+    y: 322.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_btn_resource_energy"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/common/button_resource_energy.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_energy/root"
+  parent: "template_btn_resource_energy"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_energy/button_add"
+  parent: "template_btn_resource_energy/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_energy/icon_add"
+  parent: "template_btn_resource_energy/button_add"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_energy/icon_energy"
+  parent: "template_btn_resource_energy/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_btn_resource_energy/text"
+  parent: "template_btn_resource_energy/root"
+  template_node_child: true
+}
+nodes {
+  position {
+    x: 404.0
+    y: 322.0
+  }
+  type: TYPE_TEMPLATE
+  id: "template_btn_resource_gear"
+  parent: "root"
+  inherit_alpha: true
+  template: "/gui/common/button_resource_gear.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_gear/root"
+  parent: "template_btn_resource_gear"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_gear/button_add"
+  parent: "template_btn_resource_gear/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_gear/icon_add"
+  parent: "template_btn_resource_gear/button_add"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_BOX
+  id: "template_btn_resource_gear/icon_gear"
+  parent: "template_btn_resource_gear/root"
+  template_node_child: true
+}
+nodes {
+  type: TYPE_TEXT
+  id: "template_btn_resource_gear/text"
+  parent: "template_btn_resource_gear/root"
+  template_node_child: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

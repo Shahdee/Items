@@ -1,0 +1,14 @@
+script: ""
+textures {
+  name: "background_scene"
+  texture: "/gui/atlases/background_scene.atlas"
+}
+nodes {
+  type: TYPE_BOX
+  texture: "background_scene/bg_scene"
+  id: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

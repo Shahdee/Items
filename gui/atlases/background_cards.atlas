@@ -1,0 +1,10 @@
+images {
+  image: "/assets/images/bg/bg_hard.png"
+}
+images {
+  image: "/assets/images/bg/bg_normal.png"
+}
+images {
+  image: "/assets/images/bg/bg_workshop.png"
+}
+extrude_borders: 2

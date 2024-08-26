@@ -1,0 +1,14 @@
+script: ""
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_close"
+  id: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

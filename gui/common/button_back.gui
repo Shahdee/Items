@@ -1,0 +1,46 @@
+script: ""
+fonts {
+  name: "font_bold"
+  font: "/gui/fonts/font_bold.font"
+}
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  type: TYPE_BOX
+  texture: "scene_item_atlas/bg_header"
+  id: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -185.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_back"
+  id: "button_back"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -118.0
+    y: 2.0
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "\320\237\320\276\320\270\321\201\320\272 \320\264\320\265\321\202\320\260\320\273\320\265\320\271"
+  font: "font_bold"
+  id: "text_header"
+  pivot: PIVOT_W
+  parent: "root"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

@@ -1,0 +1,4 @@
+images {
+  image: "/assets/images/bg/bg_scene.png"
+}
+extrude_borders: 2

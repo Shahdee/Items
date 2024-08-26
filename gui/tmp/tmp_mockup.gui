@@ -1,0 +1,15 @@
+script: ""
+textures {
+  name: "tmp"
+  texture: "/gui/atlases/tmp.atlas"
+}
+nodes {
+  type: TYPE_BOX
+  texture: "tmp/tmp_mockup"
+  id: "root"
+  inherit_alpha: true
+  alpha: 0.74
+  size_mode: SIZE_MODE_AUTO
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

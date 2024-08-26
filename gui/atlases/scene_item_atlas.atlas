@@ -1,0 +1,91 @@
+images {
+  image: "/assets/images/bg/bg_corner.png"
+}
+images {
+  image: "/assets/images/bg/bg_header.png"
+}
+images {
+  image: "/assets/images/bg/bg_input.png"
+}
+images {
+  image: "/assets/images/bg/bg_overlay.png"
+}
+images {
+  image: "/assets/images/bg/bg_resource.png"
+}
+images {
+  image: "/assets/images/bg/bg_warning.png"
+}
+images {
+  image: "/assets/images/bg/frame_active.png"
+}
+images {
+  image: "/assets/images/bg/frame_common.png"
+}
+images {
+  image: "/assets/images/buttons/button_arrow.png"
+}
+images {
+  image: "/assets/images/buttons/button_back.png"
+}
+images {
+  image: "/assets/images/buttons/button_close.png"
+}
+images {
+  image: "/assets/images/buttons/button_gold.png"
+}
+images {
+  image: "/assets/images/buttons/button_green.png"
+}
+images {
+  image: "/assets/images/buttons/button_max.png"
+}
+images {
+  image: "/assets/images/buttons/button_small.png"
+}
+images {
+  image: "/assets/images/icons/icon_arrow.png"
+}
+images {
+  image: "/assets/images/icons/icon_hard.png"
+}
+images {
+  image: "/assets/images/icons/icon_lock.png"
+}
+images {
+  image: "/assets/images/icons/icon_minus.png"
+}
+images {
+  image: "/assets/images/icons/icon_normal.png"
+}
+images {
+  image: "/assets/images/icons/icon_plus.png"
+}
+images {
+  image: "/assets/images/icons/icon_star_active.png"
+}
+images {
+  image: "/assets/images/icons/icon_star_inactive.png"
+}
+images {
+  image: "/assets/images/icons/icon_workshop.png"
+}
+images {
+  image: "/assets/images/resources/res_clip.png"
+}
+images {
+  image: "/assets/images/resources/res_coin.png"
+}
+images {
+  image: "/assets/images/resources/res_diamond.png"
+}
+images {
+  image: "/assets/images/resources/res_energy.png"
+}
+images {
+  image: "/assets/images/resources/res_flask.png"
+}
+images {
+  image: "/assets/images/resources/res_gear.png"
+}
+extrude_borders: 2
