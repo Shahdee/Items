@@ -1,0 +1,15 @@
+script: ""
+nodes {
+  type: TYPE_TEMPLATE
+  id: "template"
+  inherit_alpha: true
+  template: "/gui/tmp/tmp_mockup.gui"
+}
+nodes {
+  type: TYPE_BOX
+  id: "template/root"
+  parent: "template"
+  template_node_child: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

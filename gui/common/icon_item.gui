@@ -1,0 +1,99 @@
+script: ""
+fonts {
+  name: "font_bold"
+  font: "/gui/fonts/font_bold.font"
+}
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  size {
+    x: 94.0
+    y: 94.0
+  }
+  type: TYPE_BOX
+  id: "root"
+  inherit_alpha: true
+  visible: false
+}
+nodes {
+  type: TYPE_BOX
+  texture: "scene_item_atlas/bg_resource"
+  id: "icon_bg"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  type: TYPE_BOX
+  texture: "scene_item_atlas/res_clip"
+  id: "icon_item"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  type: TYPE_BOX
+  texture: "scene_item_atlas/frame_active"
+  id: "icon_frame"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 22.0
+    y: 25.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/bg_corner"
+  id: "icon_corner"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 37.0
+    y: -24.0
+  }
+  scale {
+    x: 0.75
+    y: 0.75
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "2/4"
+  font: "font_bold"
+  id: "text_amount"
+  pivot: PIVOT_E
+  parent: "root"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 37.0
+    y: 32.0
+  }
+  scale {
+    x: 0.4
+    y: 0.4
+  }
+  size {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "XVI"
+  font: "font_bold"
+  id: "text_rank"
+  pivot: PIVOT_E
+  parent: "root"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT

@@ -1,0 +1,123 @@
+script: ""
+fonts {
+  name: "font_bold"
+  font: "/gui/fonts/font_bold.font"
+}
+textures {
+  name: "scene_item_atlas"
+  texture: "/gui/atlases/scene_item_atlas.atlas"
+}
+nodes {
+  type: TYPE_BOX
+  texture: "scene_item_atlas/bg_input"
+  id: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -84.0
+    y: -4.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_small"
+  id: "button_minus"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 4.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_minus"
+  id: "icon_minus"
+  parent: "button_minus"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -5.0
+    y: 1.0
+  }
+  scale {
+    x: 0.6
+    y: 0.6
+    z: 0.6
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  type: TYPE_TEXT
+  text: "2 \321\210\321\202"
+  font: "font_bold"
+  id: "text_count"
+  parent: "root"
+  inherit_alpha: true
+}
+nodes {
+  position {
+    x: 85.0
+    y: -4.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_small"
+  id: "button_plus"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: 5.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/icon_plus"
+  id: "icon_plus"
+  parent: "button_plus"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 153.0
+    y: -3.0
+  }
+  type: TYPE_BOX
+  texture: "scene_item_atlas/button_max"
+  id: "button_max"
+  parent: "root"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -2.0
+    y: 6.0
+  }
+  scale {
+    x: 0.7
+    y: 0.7
+    z: 0.7
+  }
+  size {
+    x: 200.0
+    y: 100.0
+  }
+  color {
+    x: 0.549
+    y: 0.267
+    z: 0.004
+  }
+  type: TYPE_TEXT
+  text: "2 \321\210\321\202"
+  font: "font_bold"
+  id: "text_max"
+  parent: "button_max"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
