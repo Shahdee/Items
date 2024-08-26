@@ -362,7 +362,7 @@ nodes {
   id: "template_button_fight"
   parent: "group_fight_select"
   inherit_alpha: true
-  template: "/gui/common/button_fight.gui"
+  template: "/gui/scenes/items/button_fight.gui"
 }
 nodes {
   type: TYPE_BOX
@@ -436,7 +436,7 @@ nodes {
   id: "template_button_raid"
   parent: "group_fight_select"
   inherit_alpha: true
-  template: "/gui/common/button_raid.gui"
+  template: "/gui/scenes/items/button_raid.gui"
 }
 nodes {
   type: TYPE_BOX
@@ -504,7 +504,7 @@ nodes {
   id: "template_button_raid_centered"
   parent: "group_fight_buttons"
   inherit_alpha: true
-  template: "/gui/common/button_raid.gui"
+  template: "/gui/scenes/items/button_raid.gui"
   enabled: false
 }
 nodes {
@@ -600,7 +600,7 @@ nodes {
   id: "template_buton_attempts"
   parent: "panel_buttons"
   inherit_alpha: true
-  template: "/gui/common/button_attempts.gui"
+  template: "/gui/scenes/items/button_attempts.gui"
   enabled: false
 }
 nodes {

@@ -284,7 +284,7 @@ nodes {
   id: "template_button_create"
   parent: "panel_buttons"
   inherit_alpha: true
-  template: "/gui/common/button_create.gui"
+  template: "/gui/scenes/items/button_create.gui"
 }
 nodes {
   type: TYPE_BOX
